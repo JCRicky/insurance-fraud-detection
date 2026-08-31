@@ -1,5 +1,7 @@
 # insurance-fraud-detection
 
+## Objectives
+
 ## Methods
 - Define methods of how data is processed, analyzed, classified, and evaluated
 ## Evaluation

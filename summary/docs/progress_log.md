@@ -20,3 +20,14 @@
 - fixed unstaged changes from a supposed previous commit in setup-requirements branch
 - Done: sourcing, initial outline/draft of context, fixed uncommited/unstaged changes
 - To do: eda, initial analysis, context build-up
+
+## 07-30-26
+- initial draft of domain notes
+- identified core sources for note-taking
+- to do: eda, initial analysis, context build-up
+
+## 08-31-26
+- project resumed (pause due to device repairs)
+- finished first set of domain notes
+- done: context build-up
+- to do: eda, analysis
