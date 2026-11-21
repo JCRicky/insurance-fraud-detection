@@ -18,7 +18,7 @@ In general, the industry deals with manufacturing motor vehicles, by which, most
 An industry that operates by covering extreme losses at a particular profiled cost
 - Estimates an event-particular loss distribution, taking advantage of the unlikeliness or outlying accidents in a certain industry 
 - It finances itself from a large number of contributors to redistribute to a select few cases of incidences.
-- Through its allocations and plan profiles, the industry conforms to more of a "trust-based" entity, where contributors at a "premium" are paying for a future unlikely occurence; essentially defined as a personl security investment.
+- Through its allocations and plan profiles, the industry conforms to more of a "trust-based" entity, where contributors at a "premium" are paying for a future unlikely occurence; essentially defined as a personal security investment.
 ### Insurance Claim Lifecycle
 When an accident or particular event covered by a contributor's premium insurance plan happens, individuals are subject to a structured flow to file an insurance claim:
 1. First Notice of Loss (FNOL)
@@ -33,11 +33,11 @@ When an accident or particular event covered by a contributor's premium insuranc
    - By this stage, the insurer can assess the type of loss, exclusions, deductibles, and policy limitations to mitigate and allot reserved financing of each claim
 4. Investigation & Assessment
    - The stage where detailed assessment and fact-finding occurs; often requiring a longer duration in the claims lifecycle
-   Involves investiagtion at the loss site, estiamtion from contractors or facilities, records, witness statements, interviews, experts, and third-party data sources which may provide better context for the validity and severity of the claim.
+   - Involves investigation at the loss site, estimation from contractors or facilities, records, witness statements, interviews, experts, and third-party data sources which may provide better context for the validity and severity of the claim.
    - At this stage, the claim may be apprehended for **potential fraud**, a case that becomes crucial to the entire distribution mechanism of financing insured losses.
    - Insurance companies often utilize a claims management system for field adjusters to upload documents or supporting evidences that would aid with defending or reassessing a claim.
 5. Evaluation (Liability & Damages)
-   - With the damages and policy coverage verified, the clims can then move to an evaluation stage.
+   - With the damages and policy coverage verified, the claims can then move to an evaluation stage.
    - At this point, it comes to ask **who is responsible**, that could very well "tip the scales" in liabilities.
    - Along with determining the cause, comes calculating the **Actual Cash Value (ACV)** vs **Replacement Cost Value (RCV)**
    - **ACV** refers to a depreciated value for the damaged property from its age and condition
@@ -91,7 +91,7 @@ The intentional act of providing false or manipulated documents and personal acc
 - It is common to question **why fraud matters**, as it does stem from a thinking that these corporate entities may be taking advantage of its contributors. Yet more than often, the necessity of insurance enterprises arise with the fact that people require financial security at the event of extreme losses.
 - To answer the question on why one should care about fraud, it pertains to general aim of properly financing the actual needs of its beneficiaries. With insurance fraud, not only does the business lose profit; it stops the ability of financing loss from outlying fraudulent claims.
 ### Auto Insurance Fraud
-Fraud in auto insurance pertains to deliberate tactics, i.e. report manipulation and liability implications, that hinders a company to finance replacements, or thereof covering the costs of bodily treatments of drives (policyholders).
+Fraud in auto insurance pertains to deliberate tactics, i.e. report manipulation and liability implications, that hinders a company to finance replacements, or thereof covering the costs of bodily treatments of drivers (policyholders).
 - Insurance fraud in the automotive industry happens through a number of ways:
   1. Report of Loss: document falsification
      - The most common facet of insurance fraud where injuries, car damage, and fake incidents are reported to the insurer. A false report, given notice in the **investigation and assessment** stage of the claims lifecycle circles back to the **first notice of loss** filed by the contributor.
@@ -102,8 +102,8 @@ Fraud in auto insurance pertains to deliberate tactics, i.e. report manipulation
      - These types of fraud not only increase the price of premium paid by the customer, but also harm the driver/policyholder in accidents where safety features may have otherwise prevented injury
   3. Staged Crashes: third-party organized crime
      - An instance of fraud where a third entity, another driver, fakes an accident by directly causing it.
-     - When this happens, medical and car repair bills may be insured, that it turn would increase your paid policy plan along with other customers
-     - The FNOL should be given high importance with respect to what evidences have been collection, i.e. the existence of dashcams and personal recordings.
+     - When this happens, medical and car repair bills may be insured, that in turn would increase your paid policy plan along with other customers
+     - The FNOL should be given high importance with respect to what evidences have been collected, i.e. the existence of dashcams and personal recordings.
 ### Classifying Fraud
 Auto insurance fraud, like fraud in other industries, can be classified by how it occurs. This distinction creates a division for appropriate detection metrics and analysis to be chosen, as well as the entire machine learning methodology used for the analysis.
 - **Hard Fraud**
@@ -117,21 +117,20 @@ Auto insurance fraud, like fraud in other industries, can be classified by how i
 ### Detection and Caveats
 From the insurance claim lifecycle, fraud can be determined through investigation and assessment activities. 
 - An insurance enterprise would have to go through each report manually to spot inconsistencies by inspection. However, insurance, by an estimate, is a multi-billion dollar industry, where reports would surmount to a number that manual investigation cannot handle. 
-- Along with this, the fact that it is an assessment for possible fraud indicate an uncertainty of flagging them as such, i.e. resulting in capital loss or slow financing when missing fraudulent claims, as well as ensuring seamless insurance transactions, respectively.
+- Along with this, the fact that it is an assessment for possible fraud, indicate an uncertainty of flagging them as such, i.e. resulting in capital loss or slow financing when missing fraudulent claims, as well as ensuring seamless insurance transactions, respectively.
 - It is then important to discuss the progression of processing claims, flagging fraud, inspecting, and evaluating with the business context for the industry.
 #### Handling Class Imbalance
 There are data pre-processing steps required to make a dataset appropriately formulated for methodologies. One of these steps in the frame of fraud detection is handling **class imbalance**, this is because fraud is scarce in a dataset filled with legitimate transactions. Primarily, the reason why we account for class imbalance is the fact that it directly affects how methods or machine learning models predict the class of a transaction. While many class imbalance strategies are available, some are noteably used especially for fraud detection.
 1. Random Over/Undersampling: Undersampling and Oversampling are two separate strategies that are sometimes combined. Undersampling refers to taking fewer samples from the majority class, helping to reduce imbalance. Oversampling on the other hand, is done for the minority class where new samples are created by synthesizing/duplicating them. When combined, along with a subvariant for randomness, or random under/oversampling, the strategy balances the distribution of data that there are equal counts for both classes. It may help with addressing model's poor performance in prediciting the minority class, but as much as with creating duplicated or synthetic observations, this method is subject to overfitting the minority.
-2. SMOTE: A method that selects samples that are close in the feature space. A random sample from the minority class is first chosen, where then the k-nearest-neighbors to the sample, usually k=5 are found. With this, a synthetic sample is created at a random selected point on the line between chosesn samples of each of the nearest neighbors to the original sample. This strategy is often effective since new synthetic samples from the minority are actually created considering feature relationships as observed in a feature space. SMOTE consists of variations, i.e. SMOTE-TOMEK that interpolates neighbor samples rather than direct duplication, SMOTENC which is an extension of SMOTE that notices numerical and categorical features,
+2. SMOTE: A method that selects samples that are close in the feature space. A random sample from the minority class is first chosen, where then the k-nearest-neighbors to the sample, usually k=5 are found. With this, a synthetic sample is created at a random selected point on the line between chosen samples of each of the nearest neighbors to the original sample. This strategy is often effective since new synthetic samples from the minority are actually created considering feature relationships as observed in a feature space. SMOTE consists of variations, i.e. SMOTE-TOMEK that interpolates neighbor samples rather than direct duplication, SMOTENC which is an extension of SMOTE that notices numerical and categorical features, among others.
 3. ADASYN: A strategy similar to SMOTE that adds a random small value to points after creating the synthetic samples, since it would introduce a bit of variance than a direct linear correlation to the parent sample.
 - There are other class imbalance strategies that could be considered, i.e. **this section may then expand further when EDA and dataset inspection transpires for better pre-processing treatment**
 #### Traditional detectors
-Insurance companies have pre
-dominantly gone through reports by manual means, having a great number of manpower to decode and decide upon insurance claims.
+Insurance companies have predominantly gone through reports by manual means, having a great number of manpower to decode and decide upon insurance claims.
 - In the automotive insurance industry, this would mean having to review accident footage, go through medical histories and records, as well as finding specific clauses in a policyholder's covered set of claims in their premium.
 - Although these manual steps may have been sufficient, or still viable for small-scale insurers, the process requires aspects of semi-automations to handle a greater number of insurance claims.
 #### Modern Detectors
-Insurers, at present, use a variety of methods that is specific to their respective fields; filtering to classify claims as fraud or not. Majority, if not all fo these methods make use of AI or some form of automation in handling claims. To some extent, it is however important that human intervention is still considered a major factor in judgement on detected possible fraud. A literature review by [Schrijver et. al (2024)](https://www.sciencedirect.com/science/article/pii/S2667305324000164#kws0010) found a variety of current detection workflows for autoinsurance in recent studies.
+Insurers, at present, use a variety of methods that is specific to their respective fields; filtering to classify claims as fraud or not. Majority, if not all of these methods make use of AI or some form of automation in handling claims. To some extent, it is however important that human intervention is still considered a major factor in judgement on detected possible fraud. A literature review by [Schrijver et. al (2024)](https://www.sciencedirect.com/science/article/pii/S2667305324000164#kws0010) found a variety of current detection workflows for autoinsurance in recent studies.
 - Fraud is something that occurs as an anomaly or outlier, which is why it is important to establish that fraud datasets are often, if not all the time, imbalanced; where fraud data is only a tiny fraction of the entire dataset that then indicate careful treatment and evaluation.
 - In essence, a fraud detection workflow goes through a set of stages:
   1. Sampling: pertaining to strategies of data use and treatment
@@ -151,7 +150,7 @@ Insurers, at present, use a variety of methods that is specific to their respect
   - Decision Tree: A classification method that uses a tree, learning a sequence of if-else questions for the features of a dataset to predict class
   - Extreme Gradient Boost: An ensemble learning that involves training and combining weak classifiers that trains sequentially where each base/weak learner corrects the errors of the previous one. XGBoost shows effectiveness in classifying claims to the right categories.
 - Although the literature review mentions the use of unsupervised learning, i.e. graph-based and other relevant techniques, applications of these workflows tend to be used for high-cost or non-available ground truth labels for model comparison. Extending this, graph-based methods require extensive use of relational fields, which is mostly unavailable for single-sourced datasets; this necessitates external or appended datasets that can be difficult to source out of an organization/enterprise. It may be worth exploring when taking on projects that mention anomaly detection, not something applicable to the project at hand.
-- Note: With the numerous methods used for automobile fraud detection, this project will make use of Logistic Regression (baseline), Random Forest, and XGBoost for the predictions. README will stipulate why these models will be used for this specific analysis.
+- Note: With the numerous methods used for automobile fraud detection, this project will initially make use of Logistic Regression (baseline), Random Forest, and XGBoost for the predictions. README will stipulate why these models will be used for this specific analysis.
 ### Tradeoffs and Evaluators
 Classification machine learning models can be evaluated through how well they predict/determine the class of a sample. With many evaluation metrics available, each has its own case usage that depends on the project objective and is tailored to the field or business context and what should be "saved" or "caught" by the model. 
 #### Model Performance Metrics (Hard Predictions)
@@ -173,12 +172,48 @@ As popularly stated, all models are wrong but some are useful. With this comes t
 Model building requires a certain level of nuance of business context. It matter most when determining what should be flagged or considered in building a detection system. In detecting fraud, although models are used to find patterns in the dataset and flagging them as fraud or legitimate, it may not direct sense or be interpretable in a business lens. It then becomes necessary to frame models that they become interpretable, by means of model explainability, to allow further discussion to take place, as it is at most, a business decision. Further into this, an analyzed dataset is only good with its relative context, as such, business pricing, loss, and profit become core to data project reports. All this entirely frames the structure of model development in the viewpoint of a business venture.
 #### Insurance Premiums and Detection Crossing 
 ## The Project Data
+The online repository found in Kaggle hosts the [auto-insurance fraud dataset](https://www.kaggle.com/datasets/shivamb/vehicle-claim-fraud-detection/data). It originates from [Oracle's Fraud Detection Blog](https://blogs.oracle.com/coretec/oracle-analytics-oracle-machine-learning-fraud-detection-using-unsupervised-and-supervised-machine-learning), showing a demonstration of an entire enterprise orchestration for data analytics and machine learning with Oracle's platform.
+- For context, the article presents the different stages throughout an end-to-end data cycle for an example automotive insurance company.
+- Two steps primarily involve data science and analytics with from the covereged datatabase, to that of oracle's analtyics server, and another for the machien learning notebooks.
+- In the project they described the use of unsupervised learning to flag suspicious claims from misleading and false information or documents along with fraud claims. It is by the judgement of insurance investigators that marked the claims as fraud or legit.
+- Going by this, the data project then proceeds to supervised learning, which essentially makes used of the expert-flagged claims to train supervised models, to then further make use and evaluate how well they are able to capture fraudulent claims.
+- This then in turn makes future claims, fed daily, easier to ingest and classified as suspiciously frauduelent or legitimate for further in-depth investigations to pursue.
 
 ### Data Dictionary
-
-### Discussion Thread Points
-- From kaggle, giving information of how much analyses have been done previously on the dataset, what has been used, and of course its contents and some additional information
-### Synthesizing Missing Information
+As stipulated in the Kaggle repository, the autoinsurance claims dataset has the following column contents:
+- **Month**: The month the claim was filed (Jan, Feb, Mar, ...).
+- **WeekOfMonth**: The week number of the month the claim was filed (1, 2, 3, ...).
+- **DayOfWeek**: The day of the week the claim was filed (Monday, Tuesday, Wednesday, ...).
+- **Make**: The manufacturer of the vehicle in the claim (Toyota, Honda, Mazda, ...). 
+- **AccidentArea**: The area where the accident occurened (urban, rural).
+- **DayOfWeekClaimed**: The day of the week the claim was processed (Monday, Tuesday, Wednesday, ...). 
+- **MonthClaimed**: The month the claim was processed (Jan, Feb, Mar, ...).
+- **WeekOfMonthClaimed**: The week number of the month the claim was processed (1, 2, 3, ...). 
+- **Sex**: The assigned sex at birth of the policyholder (Male, Female).
+- **MaritalStatus**: The marital status of the policyhodler (Single, Married, Divorced, ...)
+- **Age**: The age of the policyholder (16 - 80)
+- **Fault**: The indication for who was responsible for the accident under the claim (Policy Holder, Third Party).
+- **PolicyType**: The insurance type of the policyholder (Sedan - Collision, Sport - Liability, Utility - All Perils, ...).
+- **VehicleCategory**: The type of vehicle under the claim (Sedan, Sport, Utility).
+- **VehiclePrice**: The price range group of the under the claim (20000 to 29000, 30000 to 39000, more than 69000, ...).
+- **FraudFound_P**: The binary flag that classified the claim as fraud or legitimate from the original records (1, 0).
+- **PolicyNumber**: The unique identifying number (ID) of the policyholder (1 - 15420).
+- **RepNumber**: The unique identifier of the insurance representative handling the claim (1 - 16).
+- **Deductible**: The amount the policyholder is required to pay before the company pays out the claim (300 - 700).
+- **DriverRating**: The rating of the policyholder (driver) in relation to driving records or history (1 - 4).
+- **Days_Policy_Accident**: The number of days between the first issuance of the insurance and the occurrence of the accident (more than 30, 15 to 30, 8 to 15,...).
+- **Days_Policy_Claim**: The number of days between the first issuance of the insurance and the first claim made (more than 30, 15 to 30, 8 to 15, ...).
+- **PastNumberOfClaims**: The number of past claims made (None, 1, 2 to 4, ...).
+- **AgeOfVehicle**: The age of the vehicle in the claim (new, 2 years, 3 years, ...).
+- **AgeOfPolicyHolder**: The age bracket of the policy holder (16 to 17, 18 to 20, 21 to 25, ...).
+- **PoliceReportFiled**: The indication if a police report was made for the accident (Yes, No).
+- **WitnessPresent**: The indication if a witness was present at the accident (Yes, No).
+- **AgentType**: The type of insurance agent handling the policy (internal, external).
+- **NumberOfSuppliments**: The number of supplementary evidence/documents, in ranges, for the claim (none, 1 to 2, 3 to 5, ...).
+- **AddressChange_Claim**: The indication when the policyholder changed addresses since their last claim made (no change, under 6 months, 1 year, ...).
+- **NumberOfCars**: The number of cars the policyholder owns (1 vehicle, 2 vehicles, 3 to 4, ...).
+- **Year**: The year when the claim was made (1994 - 1996).
+- **BasePolicy**: The base type of the policy (Liability, Collision, All Perils).
 
 ## References
 - [Defining the Automotive industry](https://www.britannica.com/technology/automotive-industry)
@@ -191,5 +226,5 @@ Model building requires a certain level of nuance of business context. It matter
 - [Literature Review Research on Autoinsurance fraud detection](https://www.sciencedirect.com/science/article/pii/S2667305324000164)
 - [Class Imbalance in Fraud Detection](https://medium.com/data-reply-it-datatech/imbalanced-classification-in-fraud-detection-8f63474ff8c7)
 - [Vehicle Insurance Claim Fraud Detection - Auto Insurance Dataset](https://www.kaggle.com/datasets/shivamb/vehicle-claim-fraud-detection/data)
-
+- [Auto-Insurance Data: Oracle Blog Context](https://blogs.oracle.com/coretec/oracle-analytics-oracle-machine-learning-fraud-detection-using-unsupervised-and-supervised-machine-learning)
 
